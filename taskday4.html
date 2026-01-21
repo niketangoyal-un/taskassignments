@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: beige;
+            display: flex;
+justify-content: center;
+align-items: center;     
+height: 90vh;   }
+        .form{
+            height: 50vh;
+            width: 40vw;display: block;
+            margin: auto;display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+        background-color: rgb(12, 12, 39);
+        align-items: center;
+        color: white;
+        border-radius: 20px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 30px;
+        }
+ input,button{
+    padding:10px 20px;
+    border-radius: 20px;outline: none;
+    border: 1px solid black;
+ }
+ button{
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+ }
+ label{
+    font-size: large;
+    font-weight: bold;
+ }
+    </style>
+</head>
+<body>
+    
+    <form action="/index.html" class="form">
+<p>Log In Form</p>
+        <div>
+
+            <label for="username">Username</label>
+            <input type="text"class="username" id="username" placeholder="enter your username">
+        </div>
+<div>
+
+    <label for="password"> password</label>
+    <input type="password" class="password "id="password" placeholder="enter your password">
+</div>
+<button>Log In</button>
+
+    </form>
+</body>
+</html>
