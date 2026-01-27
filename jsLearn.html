@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js assignment</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let count = 0;
+const s = "JS Practice";
+var active = true; 
+
+count += 1;
+
+console.log(typeof count);    
+console.log(typeof s);  
+console.log(typeof active); 
+
+
+
+function add(a, b) {
+  return a + b;
+}
+
+const subtract = function (a, b) {
+  return a - b;
+};
+
+const multiply = (a, b) => a * b;
+
+console.log(add(2, 3));
+console.log(subtract(5, 2));
+console.log(multiply(3, 4));
+function greet(name = "niketan") {
+  return `Hello, ${name}`;
+}
+
+function sum(...numbers) {
+  return numbers.reduce((acc, n) => acc + n, 0);
+}
+
+console.log(greet());
+console.log(sum(1, 2, 3, 4));
+const numbers = [1, 2, 3, 4, 5];
+
+const double = numbers.map(n => n * 2);
+const even = numbers.filter(n => n % 2 === 0);
+const total = numbers.reduce((sum, n) => sum + n, 0);
+
+console.log(double);
+console.log(even);
+console.log(total);
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  hlo() {
+    return `Hello, ${this.name}`;
+  }
+}
+
+const u1 = new User("niketan");
+console.log(u1.hlo());
+
+
+
+</script>
+</html>
