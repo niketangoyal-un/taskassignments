@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget app project</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar flex justify-between items-center px-5 text-gray-700  py-4 shadow-md">
+
+        <h2 class="text-4xl">Money Tracker </h2>
+        <p>current Money : <span id="total">0</span></p>
+    </div>
+<h2 class="p-4 font-bold text-center">ADD DETAILS</h2>
+<div  class="p-4 flex  gap-4 justify-center items-center">
+    <input type="number" id="amount" placeholder="enter amount" class="px-4 py-2 border-1 border-gray-300 rounded-full outline-none">
+
+<select name="types" id="type" class="px-4 py-2 border-1 border-gray-300 rounded-full outline-none">
+  <option value="salary">Salary</option>
+  <option value="food">food</option>
+  <option value="entertainment">entertainment</option>
+  <option value="rent">rent</option>
+</select>
+<button id="add" class="px-4 py-2 bg-green-400 rounded-full cursor-pointer">Add Expense</button>
+</div>
+<div class=" p-5 ">
+    <h2 class="font-bold text-2xl">Your expenses</h2>
+   <div class="flex justify-center mt-10">
+  <table class="w-[60vw] border-collapse rounded-lg overflow-hidden shadow-lg">
+    <thead class="bg-green-500 text-white">
+      <tr>
+        <th class="px-4 py-3 text-left">S.No</th>
+        <th class="px-4 py-3 text-left">Expense</th>
+        <th class="px-4 py-3 text-left">Type</th>
+        <th class="px-4 py-3 text-center">Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="tablebody" class="bg-white">
+    
+    </tbody>
+  </table>
+</div>
+
+</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
